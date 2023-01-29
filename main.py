@@ -27,7 +27,7 @@ def index():
 def audio():
     text = session.get('text')
     source = session.get('source')
-    summary = summarize.summarize(text)
+    summary = summarize.summarize(text, 8)
     base64_data = vocalize(summary, str(source))
     dir_path = os.path.dirname(os.path.realpath(__file__))
     file_path = os.path.join(dir_path, 'static/base64.txt')
