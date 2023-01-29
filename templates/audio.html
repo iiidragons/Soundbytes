@@ -30,13 +30,13 @@
             <audio id="audioPlayer"></audio>
             <div class="box f-center" style="height: 60%">
                 <div class="box f-right" style="width: 33%">
-                    <img onclick="rewind()" class="v-center" src="../static/img/controls/backward.svg" alt="backward-button" width="30%" height="30%">
+                    <img onclick="rewind()" class="v-center" src="../static/img/controls/backward.svg" alt="backward-button" width="40%" height="40%">
                 </div>
                 <div class="box f-center" style="width: 33%">
-                    <img onclick="playAudio()" class="v-center" src="../static/img/controls/play.svg" alt="play-button" width="50%" height="50%">
+                    <img id="play-pause-img" onclick="playAudio()" class="v-center" src="../static/img/controls/play.svg" alt="play-button" width="55%" height="55%">
                 </div>
                 <div class="box f-left" style="width: 33%">
-                    <img onclick="forward()" class="v-center" src="../static/img/controls/forward.svg" alt="forward-button" width="30%" height="30%">
+                    <img onclick="forward()" class="v-center" src="../static/img/controls/forward.svg" alt="forward-button" width="40%" height="40%">
                 </div>
             </div>
             <div class="box f-center" style="height: 20%">
@@ -66,6 +66,7 @@
         let progressBar = document.getElementById("progress-bar")
         let currTime = document.getElementById("curr-time")
         let length = document.getElementById("length")
+        let play_pause = document.getElementById("play-pause-img")
 
         var audio = document.getElementById("audioPlayer");
         setInterval(updateCurrentSecond, 1000)
@@ -83,8 +84,10 @@
         function playAudio() {
             if (audio.paused) {
                 audio.play()
+                play_pause.setAttribute("src", "../static/img/controls/pause.svg")
             } else {
                 audio.pause()
+                play_pause.setAttribute("src", "../static/img/controls/play.svg")
             }
         }
 
