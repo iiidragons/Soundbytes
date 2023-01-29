@@ -28,12 +28,7 @@ def audio():
     text = session.get('text')
     source = session.get('source')
     summary = summarize.summarize(text, 8)
-    base64_data = vocalize(summary, str(source))
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    file_path = os.path.join(dir_path, 'static/base64.txt')
-    with open(file_path, 'w') as f:
-      f.write(str(base64_data))
- 
+    vocalize(summary)
     return render_template("audio.html", transcript=summary)
 
 
