@@ -65,15 +65,17 @@
 
     <div class="f-center">
         <div class="square">
-            <a class="button" href="#popup1">Popup Button</a>
+            <a onclick="addText()" class="button" href="#transcript">
+                <img src="../static/img/controls/transcript.svg" alt="transcript">
+            </a>
         </div>
     </div>
 
-    <div id="popup1" class="overlay">
+    <div id="transcript" class="overlay">
         <div class="popup">
             <h2>Transcript</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
+            <a onclick="removeText()" class="close" href="javascript:void(0)">&times;</a>
+            <div id="transcript-text" class="content">
                 {{transcript}}
             </div>
         </div>
@@ -91,8 +93,6 @@
         setInterval(updateCurrentSecond, 1000)
         setTimeout(updateTotalDuration, 1000)
         setTimeout(initVolume, 1000)
-
-
 
         function playAudio() {
             if (audio.paused) {
