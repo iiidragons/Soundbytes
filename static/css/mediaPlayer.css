@@ -76,7 +76,7 @@ img:hover {
 #volume-level {
     width: 100%;
     height: 100%;
-    background-color: #2847ac;
+    background-color: #8e2dc6a2;
 }
 
 #volume-bar.active {
@@ -113,8 +113,14 @@ img:hover {
 }
 
 .square {
-    text-align: center;
+    position: absolute;
+    bottom: 2.5vw;
   }
+@media (max-width: 400px) {
+    .square {
+        bottom: 4vw;
+    }
+}
   
   .button {
     font-size: 1em;
