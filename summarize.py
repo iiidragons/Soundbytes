@@ -1,6 +1,7 @@
 import openai
+import keys
 
-openai.api_key = "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"
+openai.api_key = keys.openai_key
 def get_summary(prompt, text):
     response = openai.Completion.create(
         model="text-davinci-002",

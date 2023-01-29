@@ -1,13 +1,13 @@
 import azure.cognitiveservices.speech as speechsdk
-
+import keys
 
 # Replace with your subscription key and region
-subscription_key = "4cedf3d693c840efb6f57ee652c33434"
+subscription_key = keys.azure_key
 region = "centralus"
 
 def vocalize (text):
     speech_config = speechsdk.SpeechConfig(subscription=subscription_key, region=region)
-    audio_config = speechsdk.audio.AudioOutputConfig(filename="static/file.wav")
+    audio_config = speechsdk.audio.AudioOutputConfig(filename="static/file.wav") # type: ignore
 
 
     
@@ -23,10 +23,10 @@ def vocalize (text):
     
     
 
-    if speech_synthesis_result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
+    if speech_synthesis_result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted: # type: ignore
         print("Speech synthesized for text [{}]".format(text))
-    elif speech_synthesis_result.reason == speechsdk.ResultReason.Canceled:
-        cancellation_details = speech_synthesis_result.cancellation_details
+    elif speech_synthesis_result.reason == speechsdk.ResultReason.Canceled: # type: ignore
+        cancellation_details = speech_synthesis_result.cancellation_details # type: ignore
         print("Speech synthesis canceled: {}".format(cancellation_details.reason))
         if cancellation_details.reason == speechsdk.CancellationReason.Error:
             if cancellation_details.error_details:
