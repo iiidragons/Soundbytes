@@ -83,7 +83,9 @@ img:hover {
     height: 20%;
 }
 
+
 /* Dynamics */
+
 @media (max-width: 860px) {
     .player {
         width: 60vw;
@@ -115,53 +117,63 @@ img:hover {
 .square {
     position: absolute;
     bottom: 2.5vw;
-  }
+}
+
 @media (max-width: 400px) {
     .square {
         bottom: 4vw;
     }
 }
-  
-  .button {
+
+.button {
     font-size: 1em;
     padding: 10px;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: relative;
     height: 100%;
     width: 100%;
     padding-top: 3vw;
     padding-bottom: 3vw;
-    background: rgba(0, 0, 0, 0.7);
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-  }
-  .overlay:target {
+}
+
+.dim {
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .popup {
+}
+
+.popup {
     margin: auto;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
     width: 80%;
     position: relative;
-  }
-  
-  .popup h2 {
+}
+
+.popup h2 {
     margin-top: 0;
     padding-bottom: 5px;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
-  }
-  .popup .close {
+}
+
+.popup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -169,31 +181,34 @@ img:hover {
     font-weight: bold;
     text-decoration: none;
     color: #333;
-  }
-  .popup .content {
+}
+
+.popup .content {
     max-height: 30%;
-  }
-  
-  @media screen and (max-width: 700px){
-    .square{
-      width: 70%;
+}
+
+@media screen and (max-width: 700px) {
+    .square {
+        width: 70%;
     }
-    .popup{
-      width: 70%;
+    .popup {
+        width: 70%;
     }
-  }
+}
+
 
 /* For navbar */
+
 .navbar {
     /*
     margin: auto;
     width: 20%;
     border-radius: 7px;
     */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 
-        4px 4px 10px rgba(0, 0, 0, 0.4), 
-        6px 6px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 4px 4px 10px rgba(0, 0, 0, 0.4), 6px 6px 20px rgba(0, 0, 0, 0.5);
 }
+
+
 /*
 @media (max-width: 860px) {
     .navbar {
@@ -218,6 +233,7 @@ img:hover {
     }
 }
 */
+
 .navbar-center-el {
     margin: auto;
 }

@@ -65,18 +65,20 @@
 
     <div class="f-center">
         <div class="square">
-            <a onclick="addText()" class="button" href="#transcript">
+            <a onclick="showT()" class="button" href="#transcript">
                 <img src="../static/img/controls/transcript.svg" alt="transcript">
             </a>
         </div>
     </div>
 
-    <div id="transcript" class="overlay">
-        <div class="popup">
-            <h2>Transcript</h2>
-            <a onclick="removeText()" class="close" href="javascript:void(0)">&times;</a>
-            <div id="transcript-text" class="content">
-                {{transcript}}
+    <div id="dim" class="dim">
+        <div id="transcript" class="overlay">
+            <div class="popup">
+                <h2>Transcript</h2>
+                <a onclick="hideT()" class="close" href="javascript:void(0)">&times;</a>
+                <div class="content">
+                    {{transcript}}
+                </div>
             </div>
         </div>
     </div>
@@ -94,7 +96,8 @@
         setTimeout(updateTotalDuration, 1000)
         setTimeout(initVolume, 1000)
 
-        audio.src="../static/file.wav"
+        audio.src = "../static/file.wav"
+
         function playAudio() {
             if (audio.paused) {
                 audio.play()
@@ -206,15 +209,13 @@
             }
         })
 
-        // Remove transcript text before hiding
-        let currentText = document.getElementById("transcript-text").innerHTML
-        function removeText() {
-            document.getElementById("transcript-text").innerHTML = ""
-            window.location.href = "#";
+        function showT() {
+            document.getElementById("dim").style.display = "block"
+            console.log("show")
         }
-        // Add transcript text
-        function addText() {
-            document.getElementById("transcript-text").innerHTML = currentText
+
+        function hideT() {
+            document.getElementById("dim").style.display = "none"
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
