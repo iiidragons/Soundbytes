@@ -1,40 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="486.6" height="338.964" viewBox="0 0 486.6 338.964">
-  <g id="Group_2" data-name="Group 2" transform="translate(-1260.535 -447.535)">
-    <path id="Exclusion_1" data-name="Exclusion 1" d="M439.6,333.964H42a41.966,41.966,0,0,1-42-42V86.8a41.965,41.965,0,0,1,42-42H96.727V31a30.975,30.975,0,0,1,31-31H353.873a30.974,30.974,0,0,1,31,31V44.8H439.6a41.964,41.964,0,0,1,42,42V111.49h0V291.964a41.965,41.965,0,0,1-42,42ZM133.146,17.309a13.015,13.015,0,0,0-13,13V44.8H361.454V30.309a13.015,13.015,0,0,0-13-13Z" transform="translate(1263.035 450.035)" fill="#9694bc" stroke="#000" stroke-width="5"/>
-    <g id="Ellipse_34" data-name="Ellipse 34" transform="translate(1619.398 524.362)" fill="#dfec2a" stroke="#707070" stroke-width="4">
-      <circle cx="10.691" cy="10.691" r="10.691" stroke="none"/>
-      <circle cx="10.691" cy="10.691" r="8.691" fill="none"/>
-    </g>
-    <circle id="Ellipse_35" data-name="Ellipse 35" cx="12.218" cy="12.218" r="12.218" transform="translate(1686.599 521.307)"/>
-    <circle id="Ellipse_36" data-name="Ellipse 36" cx="12.218" cy="12.218" r="12.218" transform="translate(1652.998 521.307)"/>
-    <circle id="Ellipse_37" data-name="Ellipse 37" cx="12.218" cy="12.218" r="12.218" transform="translate(1619.398 521.307)"/>
-    <g id="Rectangle_41" data-name="Rectangle 41" transform="translate(1296.635 521.307)" fill="#9a6de9" stroke="#000" stroke-width="4">
-      <rect width="122.182" height="24.436" rx="11" stroke="none"/>
-      <rect x="2" y="2" width="118.182" height="20.436" rx="9" fill="none"/>
-    </g>
-    <g id="Ellipse_38" data-name="Ellipse 38" transform="translate(1296.635 601.744)" fill="#9a6de9" stroke="#000" stroke-width="4">
-      <circle cx="66.691" cy="66.691" r="66.691" stroke="none"/>
-      <circle cx="66.691" cy="66.691" r="64.691" fill="none"/>
-    </g>
-    <g id="Ellipse_39" data-name="Ellipse 39" transform="translate(1577.653 605.817)" fill="#9a6de9" stroke="#000" stroke-width="4">
-      <circle cx="66.691" cy="66.691" r="66.691" stroke="none"/>
-      <circle cx="66.691" cy="66.691" r="64.691" fill="none"/>
-    </g>
-    <g id="Rectangle_42" data-name="Rectangle 42" transform="translate(1463.616 632.289)" fill="#441b8a" stroke="#000" stroke-width="4">
-      <rect width="80.436" height="80.436" rx="11" stroke="none"/>
-      <rect x="2" y="2" width="76.436" height="76.436" rx="9" fill="none"/>
-    </g>
-    <g id="Ellipse_40" data-name="Ellipse 40" transform="translate(1343.471 648.58)" fill="#fff" stroke="#000" stroke-width="4">
-      <circle cx="20.364" cy="20.364" r="20.364" stroke="none"/>
-      <circle cx="20.364" cy="20.364" r="18.364" fill="none"/>
-    </g>
-    <g id="Ellipse_41" data-name="Ellipse 41" transform="translate(1624.489 652.653)" fill="#fff" stroke="#000" stroke-width="4">
-      <circle cx="20.364" cy="20.364" r="20.364" stroke="none"/>
-      <circle cx="20.364" cy="20.364" r="18.364" fill="none"/>
-    </g>
-    <g id="Rectangle_43" data-name="Rectangle 43" transform="translate(1463.616 632.289)" fill="#9a6de9" stroke="#000" stroke-width="4">
-      <rect width="80.436" height="32.582" rx="11" stroke="none"/>
-      <rect x="2" y="2" width="76.436" height="28.582" rx="9" fill="none"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="490.6" height="342.964" viewBox="0 0 490.6 342.964">
+  <path id="Exclusion_1" data-name="Exclusion 1" d="M439.6,333.964H42a41.966,41.966,0,0,1-42-42V86.8a41.965,41.965,0,0,1,42-42H96.727V31a30.975,30.975,0,0,1,31-31H353.873a30.974,30.974,0,0,1,31,31V44.8H439.6a41.964,41.964,0,0,1,42,42V111.49h0V291.964a41.965,41.965,0,0,1-42,42ZM133.146,17.309a13.015,13.015,0,0,0-13,13V44.8H361.454V30.309a13.015,13.015,0,0,0-13-13Z" transform="translate(4.5 4.5)" fill="#9a6de9" stroke="#000" stroke-width="9"/>
+  <g id="Ellipse_34" data-name="Ellipse 34" transform="translate(360.863 78.827)" fill="#dfec2a" stroke="#707070" stroke-width="6">
+    <circle cx="10.691" cy="10.691" r="10.691" stroke="none"/>
+    <circle cx="10.691" cy="10.691" r="7.691" fill="none"/>
+  </g>
+  <g id="Ellipse_35" data-name="Ellipse 35" transform="translate(428.063 75.772)" fill="#78e938" stroke="#000" stroke-width="6">
+    <circle cx="12.218" cy="12.218" r="12.218" stroke="none"/>
+    <circle cx="12.218" cy="12.218" r="9.218" fill="none"/>
+  </g>
+  <g id="Ellipse_36" data-name="Ellipse 36" transform="translate(394.463 75.772)" fill="#e4f859" stroke="#000" stroke-width="6">
+    <circle cx="12.218" cy="12.218" r="12.218" stroke="none"/>
+    <circle cx="12.218" cy="12.218" r="9.218" fill="none"/>
+  </g>
+  <g id="Ellipse_37" data-name="Ellipse 37" transform="translate(360.863 75.772)" fill="#d44cb8" stroke="#000" stroke-width="6">
+    <circle cx="12.218" cy="12.218" r="12.218" stroke="none"/>
+    <circle cx="12.218" cy="12.218" r="9.218" fill="none"/>
+  </g>
+  <g id="Rectangle_41" data-name="Rectangle 41" transform="translate(38.1 75.772)" fill="#441b8a" stroke="#000" stroke-width="6">
+    <rect width="122.182" height="24.436" rx="11" stroke="none"/>
+    <rect x="3" y="3" width="116.182" height="18.436" rx="8" fill="none"/>
+  </g>
+  <g id="Union_10" data-name="Union 10" transform="translate(4.766 115.646)" fill="#9694bc">
+    <path d="M 440.0001220703125 219.5001220703125 L 41.00042724609375 219.5001220703125 C 36.07086563110352 219.5001220703125 31.29117584228516 218.5356750488281 26.79411506652832 216.6336212158203 C 22.44823837280273 214.7954254150391 18.54423904418945 212.1629943847656 15.19067668914795 208.8094329833984 C 11.83711433410645 205.4558715820312 9.204676628112793 201.5519256591797 7.366488933563232 197.2059936523438 C 5.464426517486572 192.7089233398438 4.499989032745361 187.9293060302734 4.499989032745361 182.9997406005859 L 4.499989032745361 41.00042724609375 L 4.499989032745361 4.499990940093994 L 41.00042724609375 4.499990940093994 L 440.0001220703125 4.499990940093994 L 476.4996032714844 4.499990940093994 L 476.4996032714844 147.9996185302734 L 476.4996032714844 182.9997406005859 C 476.4996032714844 187.9293060302734 475.5352478027344 192.708984375 473.6331787109375 197.2060546875 C 471.7951049804688 201.5519866943359 469.1628112792969 205.4559326171875 465.8093566894531 208.8094940185547 C 462.4558715820312 212.1630554199219 458.5520629882812 214.7954864501953 454.2062377929688 216.6336212158203 C 449.709228515625 218.5356750488281 444.9296264648438 219.5001220703125 440.0001220703125 219.5001220703125 Z" stroke="none"/>
+    <path d="M 440.0001525878906 215.0001220703125 C 457.6447448730469 215.0001220703125 471.9995727539062 200.6447601318359 471.9995727539062 182.9996948242188 L 471.9995727539062 8.999981880187988 L 9.000016212463379 8.999981880187988 L 9.000016212463379 182.9996948242188 C 9.000016212463379 200.6447601318359 23.35530090332031 215.0001220703125 41.00037384033203 215.0001220703125 L 440.0001525878906 215.0001220703125 M 440.0001525878906 224.0001220703125 L 41.00037384033203 224.0001220703125 C 18.35637283325195 224.0001220703125 1.592145599715877e-05 205.6436920166016 1.592145599715877e-05 182.9996948242188 L 1.592145599715877e-05 -1.802280894480646e-05 L 480.9995727539062 -1.802280894480646e-05 L 480.9995727539062 182.9996948242188 C 480.9995727539062 205.6436920166016 462.6440734863281 224.0001220703125 440.0001525878906 224.0001220703125 Z" stroke="none" fill="#000"/>
+  </g>
+  <g id="Ellipse_38" data-name="Ellipse 38" transform="translate(38.1 156.209)" fill="#9a6de9" stroke="#000" stroke-width="6">
+    <circle cx="66.691" cy="66.691" r="66.691" stroke="none"/>
+    <circle cx="66.691" cy="66.691" r="63.691" fill="none"/>
+  </g>
+  <g id="Ellipse_39" data-name="Ellipse 39" transform="translate(319.118 160.281)" fill="#9a6de9" stroke="#000" stroke-width="6">
+    <circle cx="66.691" cy="66.691" r="66.691" stroke="none"/>
+    <circle cx="66.691" cy="66.691" r="63.691" fill="none"/>
+  </g>
+  <g id="Rectangle_42" data-name="Rectangle 42" transform="translate(205.081 186.754)" fill="#441b8a" stroke="#000" stroke-width="6">
+    <rect width="80.436" height="80.436" rx="11" stroke="none"/>
+    <rect x="3" y="3" width="74.436" height="74.436" rx="8" fill="none"/>
+  </g>
+  <g id="Ellipse_40" data-name="Ellipse 40" transform="translate(84.936 203.045)" fill="#fff" stroke="#000" stroke-width="6">
+    <circle cx="20.364" cy="20.364" r="20.364" stroke="none"/>
+    <circle cx="20.364" cy="20.364" r="17.364" fill="none"/>
+  </g>
+  <g id="Ellipse_41" data-name="Ellipse 41" transform="translate(365.954 207.118)" fill="#fff" stroke="#000" stroke-width="6">
+    <circle cx="20.364" cy="20.364" r="20.364" stroke="none"/>
+    <circle cx="20.364" cy="20.364" r="17.364" fill="none"/>
+  </g>
+  <g id="Rectangle_43" data-name="Rectangle 43" transform="translate(205.081 186.754)" fill="#9a6de9" stroke="#000" stroke-width="6">
+    <rect width="80.436" height="32.582" rx="11" stroke="none"/>
+    <rect x="3" y="3" width="74.436" height="26.582" rx="8" fill="none"/>
   </g>
 </svg>
