@@ -1,19 +1,35 @@
-import requests
-import random
+import azure.cognitiveservices.speech as speechsdk
 
-def vocalize(text, voice="random"):
-    API_KEY = "0fca8d1bdf3c4dc1bf3e1fc03a5c0f83"
-    voices = ["linda", "amy", "mary", "john", "mike"]
-    if voice == "random":
-        voice = random.choice(voices)
-    elif voice == "musk":
-        voice = "mike"
-    elif voice == "freeman":
-        voice = "john"
-    elif voice == "male":
-        voice = "mike"
-    elif voice == "female":
-        voice = "mary"
-    url = "https://api.voicerss.org/?key={}&hl=en-us&b64=true&v={}&src={}".format(API_KEY, voice, text)
-    response = requests.get(url)
-    return response.content
+
+# Replace with your subscription key and region
+subscription_key = "4cedf3d693c840efb6f57ee652c33434"
+region = "centralus"
+
+def vocalize (text):
+    speech_config = speechsdk.SpeechConfig(subscription=subscription_key, region=region)
+    audio_config = speechsdk.audio.AudioOutputConfig(filename="static/file.wav")
+
+
+    
+    # The language of the voice that speaks.
+    speech_config.speech_synthesis_voice_name='en-US-JennyNeural'
+
+    speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_config)
+
+    # Get text from the console and synthesize to the default speaker.
+
+
+    speech_synthesis_result = speech_synthesizer.speak_text_async(text).get()
+    
+    
+
+    if speech_synthesis_result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
+        print("Speech synthesized for text [{}]".format(text))
+    elif speech_synthesis_result.reason == speechsdk.ResultReason.Canceled:
+        cancellation_details = speech_synthesis_result.cancellation_details
+        print("Speech synthesis canceled: {}".format(cancellation_details.reason))
+        if cancellation_details.reason == speechsdk.CancellationReason.Error:
+            if cancellation_details.error_details:
+                print("Error details: {}".format(cancellation_details.error_details))
+                print("Did you set the speech resource key and region values?")
+
