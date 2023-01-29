@@ -1,0 +1,125 @@
+body {
+    background: url(../img/indexBg.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+    .me-2-enlarge {
+        padding-right: 12rem !important;
+    }
+}
+@media (min-width: 1300px) {
+    .me-2-enlarge {
+        padding-right: 19rem !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .form-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.position {
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 8rem;
+    -ms-transform: translateY(-65%);
+    transform: translateY(-65%);
+}
+
+@media (max-width: 860px) {
+    .position {
+        left: 5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .position {
+        left: 2rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .position {
+        left: 0;
+    }
+}
+
+@media (max-width: 370px) {
+    .position {
+        left: -2rem;
+    }
+}
+
+.btn-go {
+    color: #9A6DE9 !important;
+    border-color: #9A6DE9 !important;
+}
+
+.btn-go:hover {
+    background-color: #9A6DE9 !important;
+    color: white !important;
+}
+
+/* Loading Screen */
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100% !important;
+    background-color: rgb(80, 69, 80);
+    opacity: 0.7;
+}
+
+.f-center {
+    /* Horizontal center */
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.v-center {
+    /* Vertical center */
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+
+.v-center-text-above {
+    /* Vertical center */
+    margin: 0;
+    position: absolute;
+    top: 32%;
+    -ms-transform: translateY(-32%);
+    transform: translateY(-32%);
+
+    /* Formating */
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.loading-anim {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid rgb(65, 56, 58);
+    border-bottom: 16px solid rgb(65, 56, 58);
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
