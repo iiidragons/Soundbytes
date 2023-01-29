@@ -6,7 +6,7 @@ def get_summary(prompt, text):
         model="text-davinci-002",
         prompt=prompt,
         temperature=0.5,
-        max_tokens=3999- len(prompt),
+        max_tokens=2500,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0,

@@ -27,7 +27,9 @@
     <!-- NAVBAR ENDS HERE-->
     <div class="f-center">
         <div class="player v-center">
-            <audio id="audioPlayer"></audio>
+            <audio id="audioPlayer">
+                <source src="{{ url_for('static', filename='file.wav') }}" type="audio/wav">
+            </audio>
             <div class="box f-center" style="height: 60%">
                 <div class="box f-right" style="width: 33%">
                     <img onclick="rewind()" class="v-center" src="../static/img/controls/backward.svg" alt="backward-button" width="40%" height="40%">
@@ -91,12 +93,6 @@
         setTimeout(initVolume, 1000)
 
 
-        fetch("{{ url_for('static', filename='base64.txt') }}")
-            .then(response => response.text())
-            .then(text => {
-                var newStr = text.substring(2, text.length - 1)
-                audio.src = newStr;
-            });;
 
         function playAudio() {
             if (audio.paused) {

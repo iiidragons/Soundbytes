@@ -7,7 +7,7 @@ region = "centralus"
 
 def vocalize (text):
     speech_config = speechsdk.SpeechConfig(subscription=subscription_key, region=region)
-    audio_config = speechsdk.audio.AudioOutputConfig(filename="templates/file.wav")
+    audio_config = speechsdk.audio.AudioOutputConfig(filename="static/file.wav")
 
 
     
@@ -33,4 +33,3 @@ def vocalize (text):
                 print("Error details: {}".format(cancellation_details.error_details))
                 print("Did you set the speech resource key and region values?")
 
-print(vocalize("I want to join Cody in the shower"))
