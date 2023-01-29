@@ -34,7 +34,7 @@ def audio():
     with open(file_path, 'w') as f:
       f.write(str(base64_data))
  
-    return render_template("audio.html")
+    return render_template("audio.html", transcript=summary)
 
 
 

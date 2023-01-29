@@ -14,14 +14,14 @@
     <!-- NAVBAR-->
     <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="--bs-bg-opacity: .9 !important;">
         <div class="navbar-center-el">
-        <ul class="navbar-nav me-auto mb-1 mb-lg-0" style="flex-direction: row">
-            <a class="navbar-brand" href="/">
-                <img src="../static/img/Asset_1.ico" alt="Logo">
-            </a>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Explore more</a>
-            </li>
-        </ul>
+            <ul class="navbar-nav me-auto mb-1 mb-lg-0" style="flex-direction: row">
+                <a class="navbar-brand" href="/">
+                    <img src="../static/img/Asset_1.ico" alt="Logo">
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Explore more</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <!-- NAVBAR ENDS HERE-->
@@ -60,23 +60,23 @@
             </div>
         </div>
     </div>
-    
+
     <div class="f-center">
-    <div class="square">
-        <a class="button" href="#popup1">Popup Button</a>
+        <div class="square">
+            <a class="button" href="#popup1">Popup Button</a>
+        </div>
     </div>
-    </div>
-    
+
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>Transcript</h2>
             <a class="close" href="#">&times;</a>
             <div class="content">
-                Transcript goes here
+                {{transcript}}
             </div>
         </div>
     </div>
-    
+
     <script>
         <!--XMLHttpRequest to get base64 from pastebin and saves output-->
         let progress = document.getElementById("progress")
